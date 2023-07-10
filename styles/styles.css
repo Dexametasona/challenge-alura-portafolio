@@ -58,6 +58,15 @@
 
 .about {
   background-color: #EAF2FD;
+  padding-block: 1rem;
+}
+.about__container__title {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+.about__container__paragraph {
+  text-align: justify;
 }
 
 html {

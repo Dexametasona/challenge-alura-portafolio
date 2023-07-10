@@ -1,3 +1,14 @@
 .about{
   background-color: $primaryCol;
+  padding-block: 1rem;
+  &__container{
+    &__title{
+      font-size: 1.5rem;
+      font-weight: bolder;
+      margin-bottom: 1rem;
+    }
+    &__paragraph{
+      text-align: justify;
+    }
+  }
 }
