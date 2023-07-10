@@ -1,0 +1,15 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1rem;
+  &__header {
+    display: flex;
+    font-weight: bolder;
+    img{
+        margin-right: 1rem;
+    }
+  }
+  &__list {
+    display: none;
+  }
+}

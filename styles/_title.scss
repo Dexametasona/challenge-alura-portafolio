@@ -1,0 +1,47 @@
+.title {
+  &__profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    img {
+      box-shadow: 1px 3px 33px -7px rgba(0, 0, 0, 0.5);
+      border-radius: 100%;
+      width: 50%;
+    }
+    h2 {
+      font-weight: bolder;
+      text-align: justify;
+    }
+  }
+  &__box {
+    & > * {
+      padding-bottom: 1rem;
+    }
+    &__section {
+      text-align: justify;
+    }
+    &__network {
+      display: flex;
+      gap: 1rem;
+      font-weight: bolder;
+      &__item {
+        display: flex;
+        flex-direction: column;
+        &::after {
+          content: "";
+          @include fastAnimate;
+          background-color: black;
+          height: 5px;
+          width: 0%;
+        }
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

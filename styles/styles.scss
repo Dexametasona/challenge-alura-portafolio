@@ -1,0 +1,21 @@
+@import "configurations";
+@import "menu";
+@import "title";
+@import "about";
+@import "skills";
+@import "hobbies";
+@import "academic";
+@import "experience";
+@import "formcontacto";
+@import "footer";
+@import "responsive";
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  & > * {
+    background-color: $bgCol;
+    padding-inline: 1rem;
+  }
+}

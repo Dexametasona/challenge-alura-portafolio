@@ -1,0 +1,7 @@
+$primaryCol:#EAF2FD;
+$secondaryCol:#2A7AE4;
+$bgCol:#F5F5F5;
+
+@mixin fastAnimate{
+  transition:all ease-in-out 0.5s;
+}
