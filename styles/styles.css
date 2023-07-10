@@ -69,6 +69,24 @@
   text-align: justify;
 }
 
+.skills__title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-block: 1rem;
+}
+.skills__line {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+.skills__line__card {
+  grid-column: span 3;
+  background-color: white;
+  border-radius: 1rem;
+  text-align: center;
+}
+
 html {
   scroll-behavior: smooth;
 }

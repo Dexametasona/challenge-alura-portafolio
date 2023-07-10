@@ -1,0 +1,19 @@
+.skills{
+  &__title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding-block: 1rem;
+  }
+  &__line{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    &__card{
+      grid-column: span 3;
+      background-color: white;
+      border-radius: 1rem;
+      text-align: center;
+    }
+  }
+}
