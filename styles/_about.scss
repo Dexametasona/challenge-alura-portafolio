@@ -3,9 +3,7 @@
   padding-block: 1rem;
   &__container{
     &__title{
-      font-size: 1.5rem;
-      font-weight: bolder;
-      margin-bottom: 1rem;
+      @include titleSectionStyle;
     }
     &__paragraph{
       text-align: justify;

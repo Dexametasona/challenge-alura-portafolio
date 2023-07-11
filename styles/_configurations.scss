@@ -5,3 +5,9 @@ $bgCol:#F5F5F5;
 @mixin fastAnimate{
   transition:all ease-in-out 0.5s;
 }
+@mixin titleSectionStyle{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-block: 1rem;
+}
