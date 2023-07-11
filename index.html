@@ -254,48 +254,66 @@
     <!-- Sección de Contacto -->
     <section class="formcontato" id="contacto">
       <div class="formcontato__contacto">
-        <div class="formcontato--esquerda">
-          <img
-            class="formcontato__img"
-            src="assets/contact_image.png"
-            alt="icon-contact"
-          />
-        </div>
+        <img
+          class="formcontato__img"
+          src="assets/contact_image.png"
+          alt="icon-contact"
+        />
         <div class="formcontato__text">
-          <h2 class="formcontato__title">Contacto</h2>
-          <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-          <h3 class="formcontato__subtext">
+          <h2 class="formcontato__text__title">Contacto</h2>
+          <h3 class="formcontato__text__subtext">¿Quieres contactarme?</h3>
+          <h3 class="formcontato__text__subtext">
             Complete el siguiente formulario y me pondré en contacto con usted
             lo antes posible.
           </h3>
-          <form class="formcontato__form" name="form">
-            <input
-              class="formcontato__input"
-              type="text"
-              name="nombre"
-              placeholder="Nombre"
-            />
-            <input
-              class="formcontato__input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-            <input
-              class="formcontato__input"
-              type="text"
-              name="asunto"
-              placeholder="Assunto"
-            />
-            <textarea
-              class="formcontato__textarea"
-              rows="5"
-              cols="10"
-              id="mensagem"
-              name="mensaje"
-              placeholder="Mensaje"
-            ></textarea>
-            <button type="submit" class="formcontato__botao">
+          <form class="formcontato__text__form" name="form">
+            <div class="formcontato__text__form__input">
+              <label data-label-nombre for="nombre">Nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                data-input-nombre
+                onfocus="labelIn('nombre')"
+                onblur="labelOut('nombre')"
+              />
+            </div>
+            <div class="formcontato__text__form__input">
+              <label data-label-email for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                data-input-email
+                onfocus="labelIn('email')"
+                onblur="labelOut('email')"
+              />
+            </div>
+            <div class="formcontato__text__form__input">
+              <label data-label-asunto for="asunto">Asunto</label>
+              <input
+                type="text"
+                id="asunto"
+                name="asunto"
+                data-input-asunto
+                onfocus="labelIn('asunto')"
+                onblur="labelOut('asunto')"
+              />
+            </div>
+            <div class="formcontato__text__form__input">
+              <label data-label-mensaje for="mensaje">Mensaje</label>
+              <textarea
+                rows="5"
+                cols="5"
+                id="mensaje"
+                name="mensaje"
+                wrap="off"
+                data-input-mensaje
+                onfocus="labelIn('mensaje')"
+                onblur="labelOut('mensaje')"
+              ></textarea>
+            </div>
+            <button type="submit" class="formcontato__text__form__btn">
               Enviar mensaje
             </button>
           </form>
@@ -304,10 +322,8 @@
     </section>
     <!-- Sección de Footer -->
     <footer class="footer" id="footer">
-      <div class="footer__rodape">
-        <p>Desarrollado por Fulana de Tal</p>
-        <p>2022</p>
-      </div>
+        <p>Desarrollado por Alexander Machicado Gomez</p>
+        <p>2023</p>
     </footer>
     <!-- Script del documento JavaScript -->
     <script src="validacion.js"></script>

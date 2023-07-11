@@ -192,6 +192,70 @@
   opacity: 0.5;
 }
 
+.formcontato {
+  background-color: #EAF2FD;
+  padding-bottom: 2rem;
+}
+.formcontato img {
+  display: none;
+}
+.formcontato__text__title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-block: 1rem;
+}
+.formcontato__text__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.formcontato__text__form__input {
+  background-color: white;
+  position: relative;
+}
+.formcontato__text__form__input > * {
+  transition: all ease-in-out 0.5s;
+}
+.formcontato__text__form__input label {
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+  opacity: 0.5;
+}
+.formcontato__text__form__input input, .formcontato__text__form__input textarea {
+  padding-top: 1rem;
+  width: 100%;
+  padding-left: 0.5rem;
+  background-color: white;
+  outline: solid 2px transparent;
+}
+.formcontato__text__form__input input:focus, .formcontato__text__form__input textarea:focus {
+  outline: solid 2px #2A7AE4;
+}
+.formcontato__text__form__btn {
+  text-align: center;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border: solid 2px #2A7AE4;
+  background-color: #2A7AE4;
+  color: white;
+}
+
+.labelIn {
+  font-size: 0.7rem;
+  top: 0 !important;
+  color: #2A7AE4;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  padding-block: 2rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
