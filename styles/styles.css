@@ -117,6 +117,7 @@
 
 .academic {
   background-color: #EAF2FD;
+  padding-bottom: 1rem;
 }
 .academic__title {
   text-align: center;
@@ -143,6 +144,52 @@
 }
 .academic__courses__box h4 {
   font-weight: bolder;
+}
+
+.experience__title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-block: 1rem;
+}
+.experience__box {
+  margin-bottom: 2rem;
+}
+.experience__box img {
+  margin-bottom: 1rem;
+}
+.experience__box__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.experience__box__info h2 {
+  grid-column: span 2;
+  font-weight: bolder;
+}
+.experience__box__info__repo {
+  text-align: center;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border: solid 2px #2A7AE4;
+  background-color: transparent;
+  color: #2A7AE4;
+  transition: all ease-in-out 0.5s;
+}
+.experience__box__info__repo:hover {
+  opacity: 0.5;
+}
+.experience__box__info__demo {
+  text-align: center;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border: solid 2px #2A7AE4;
+  background-color: #2A7AE4;
+  color: white;
+  transition: all ease-in-out 0.5s;
+}
+.experience__box__info__demo:hover {
+  opacity: 0.5;
 }
 
 html {

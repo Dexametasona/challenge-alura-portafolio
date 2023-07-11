@@ -1,5 +1,6 @@
 .academic{
   background-color: $primaryCol;
+  padding-bottom: 1rem;
   &__title{
     @include titleSectionStyle;
   }

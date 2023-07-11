@@ -11,3 +11,11 @@ $bgCol:#F5F5F5;
   font-weight: bolder;
   padding-block: 1rem;
 }
+@mixin btnStyle ($borderCol, $bgCol, $fontCol){
+  text-align: center;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border: solid 2px $borderCol;
+  background-color: $bgCol;
+  color: $fontCol;
+}
