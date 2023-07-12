@@ -25,15 +25,15 @@
       </header>
       <nav>
         <ul class="menu__list">
-          <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-          <li class="menu__list__item"><a href="#skills">Skills</a></li>
-          <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-          <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-          <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-          <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
+          <li class="menu__list__item"><a href="#about"><p>Sobre m&iacute; </p><div></div></a></li>
+          <li class="menu__list__item"><a href="#skills"><p>Skills <div></div></p></a></li>
+          <li class="menu__list__item"><a href="#hobbies"><p>Hobbies</p><div></div></a></li>
+          <li class="menu__list__item"><a href="#formacion"><p>Formaci&oacute;n</p><div></div></a></li>
+          <li class="menu__list__item"><a href="#xp"><p>Proyectos</p><div></div></a></li>
+          <li class="menu__list__item"><a href="#contacto"><p>Contacto</p><div></div></a></li>
         </ul>
       </nav>
-      <a class="menu_contacto" href="#contacto">Contacto</a>
+      <a class="menu__contacto" href="#contacto">Contacto</a>
     </section>
 
     <!-- Sección del Header/Title/Hero -->
@@ -48,7 +48,7 @@
       <div class="title__box">
         <h3 class="title__box__section">
           Soy desarrollador web frontend formado por Certus y actualmente
-          desarrollo poyectos freelance.
+          desarrollo proyectos freelance.
         </h3>
         <ul class="title__box__network">
           <!-- Pon los enlaces de tus redes sociales favoritas -->
@@ -74,7 +74,7 @@
     <!-- Sección sobre mi -->
     <section class="about" id="about">
       <div class="about__container">
-        <h3 class="about__container__title">Sobre mi</h3>
+        <h3 class="about__container__title">Sobre m&iacute;</h3>
         <p class="about__container__paragraph">
           Me llamo Alexander Machicado Gomez, tengo 28 años, soy de Perú y aunque soy odont&oacute;logo de profesi&oacute;n, tambien tengo
           formaci&oacute;n como Desarrollador web frontend por Certus,
@@ -245,7 +245,7 @@
           alt="icon-decod"
         />
         <div class="experience__box__info">
-          <h2 >Encriptador de texto</h2>
+          <h2 >PokeAPI</h2>
           <a class="experience__box__info__repo" href="https://github.com/Dexametasona/sincrono19">Reposit&oacute;rio</a>
           <a class="experience__box__info__demo" href="https://dexametasona.github.io/sincrono19/">Ver demo</a>
         </div>
@@ -263,7 +263,7 @@
           <h2 class="formcontato__text__title">Contacto</h2>
           <h3 class="formcontato__text__subtext">¿Quieres contactarme?</h3>
           <h3 class="formcontato__text__subtext">
-            Complete el siguiente formulario y me pondré en contacto con usted
+            Complete el siguiente formulario y me pondr&eacute; en contacto con usted
             lo antes posible.
           </h3>
           <form class="formcontato__text__form" name="form">
@@ -313,9 +313,10 @@
                 onblur="labelOut('mensaje')"
               ></textarea>
             </div>
-            <button type="submit" class="formcontato__text__form__btn">
+            <button data-btn disabled type="submit" class="formcontato__text__form__btn" onclick="validator(event)">
               Enviar mensaje
             </button>
+            <p class="formcontato__text__form__msj" data-msj></p>
           </form>
         </div>
       </div>

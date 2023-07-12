@@ -1,0 +1,153 @@
+@media screen and (min-width:370px){
+  .title{
+    &__profile{
+      h2{
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+@media screen and (min-width:550px) {
+  body {
+    & > *{
+      padding-inline: 2rem !important;
+    }
+  }
+  .title{
+    &__profile{
+      img{
+        width: 25%;
+        order: 2;
+      }
+      h2{
+        font-size: 2rem;
+      }
+    }
+  }
+  .skills{
+    &__line{
+      &__card{
+        grid-column: span 2;
+      }
+    }
+  }
+  .hobbies{
+    &__line{
+      &__box{
+        grid-column: span 2;
+      }
+    }
+  }
+  .academic{
+    &__courses{
+      &__box{
+        grid-column: span 2;
+      }
+    }
+  }
+}
+@media screen and (min-width:800px){
+  .menu{
+    &__list{
+      display: flex;
+      gap: 1rem;
+    }
+    &__contacto{
+      display: none;
+    }
+  }
+  .title{
+    &__profile{
+      img{
+        width: 15%;
+        order: 2;
+      }
+      h2{
+        font-size: 2.5rem;
+      }
+    }
+    &__box{
+      &__section{
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .about{
+    &__container{
+      &__title{
+        font-size: 2.5rem;
+      }
+      &__paragraph{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+  .skills{
+    &__title{
+      font-size: 2.5rem;
+    }
+    &__line{
+      &__card{
+        grid-column: span 1;
+      }
+    }
+  }
+  .hobbies{
+    &__title{
+      font-size: 2.5rem;
+    }
+  }
+  .academic{
+    &__title{
+      font-size: 2.5rem;
+    }
+    &__courses{
+      &__box{
+        grid-column: span 1;
+      }
+    }
+  }
+  .experience{
+    &__title{
+      font-size: 2.5rem;
+    }
+    &__box{
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      img{
+        width: 60%;
+      }
+      &__info{
+        align-content: center;
+        justify-items: center;
+        font-size: 1.5rem;
+      }
+      &:nth-child(even){
+        img{
+          order: 2;
+        }
+      }
+    }
+  }
+  .formcontato{
+    padding-block: 2rem;
+    &__contacto{
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    img{
+      display: block;
+      width: 25%;
+    }
+  }
+}
+@media screen and (min-width:1000px) {
+  body{
+    & > * {
+      padding-inline: 10vw !important;
+    }
+  }
+}

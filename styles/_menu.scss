@@ -11,5 +11,30 @@
   }
   &__list {
     display: none;
+    &__item{
+      a{
+        display: flex;
+        flex-direction: column;
+        div{
+          width: 100%;
+          height: 15px;
+          background-image: url('../assets/zigzag.png');
+          background-size: cover;
+          position: relative;
+          &::after{
+            position: absolute;
+            content: "";
+            width: 105%;
+            background-color: $bgCol;
+            height: 105%;
+            @include fastAnimate;
+          }
+          
+        }
+      } 
+      &:hover>a>div::after{
+        width: 0%;
+      }
+    }
   }
 }

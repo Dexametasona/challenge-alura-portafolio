@@ -8,6 +8,9 @@
     &__title{
       @include titleSectionStyle;
     }
+    &__subtext{
+      margin-bottom: 1rem;
+    }
     &__form{
       display: flex;
       flex-direction: column;
@@ -40,6 +43,16 @@
       }
       &__btn{
         @include btnStyle($secondaryCol, $secondaryCol,  white);
+        margin-inline: auto;
+        &:disabled{
+          opacity: 0.5;
+          cursor: none;
+        }
+      }
+      &__msj{
+        color: red;
+        font-weight: bold;
+        opacity: 0.7;
       }
     }
   }

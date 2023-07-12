@@ -13,6 +13,28 @@
 .menu__list {
   display: none;
 }
+.menu__list__item a {
+  display: flex;
+  flex-direction: column;
+}
+.menu__list__item a div {
+  width: 100%;
+  height: 15px;
+  background-image: url("../assets/zigzag.png");
+  background-size: cover;
+  position: relative;
+}
+.menu__list__item a div::after {
+  position: absolute;
+  content: "";
+  width: 105%;
+  background-color: #F5F5F5;
+  height: 105%;
+  transition: all ease-in-out 0.5s;
+}
+.menu__list__item:hover > a > div::after {
+  width: 0%;
+}
 
 .title__profile {
   display: flex;
@@ -22,7 +44,6 @@
   margin-bottom: 1rem;
 }
 .title__profile img {
-  box-shadow: 1px 3px 33px -7px rgba(0, 0, 0, 0.5);
   border-radius: 100%;
   width: 50%;
 }
@@ -153,7 +174,7 @@
   padding-block: 1rem;
 }
 .experience__box {
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 .experience__box img {
   margin-bottom: 1rem;
@@ -205,6 +226,9 @@
   font-weight: bolder;
   padding-block: 1rem;
 }
+.formcontato__text__subtext {
+  margin-bottom: 1rem;
+}
 .formcontato__text__form {
   display: flex;
   flex-direction: column;
@@ -240,6 +264,16 @@
   border: solid 2px #2A7AE4;
   background-color: #2A7AE4;
   color: white;
+  margin-inline: auto;
+}
+.formcontato__text__form__btn:disabled {
+  opacity: 0.5;
+  cursor: none;
+}
+.formcontato__text__form__msj {
+  color: red;
+  font-weight: bold;
+  opacity: 0.7;
 }
 
 .labelIn {
@@ -256,6 +290,109 @@
   padding-block: 2rem;
 }
 
+@media screen and (min-width: 370px) {
+  .title__profile h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 550px) {
+  body > * {
+    padding-inline: 2rem !important;
+  }
+  .title__profile img {
+    width: 25%;
+    order: 2;
+  }
+  .title__profile h2 {
+    font-size: 2rem;
+  }
+  .skills__line__card {
+    grid-column: span 2;
+  }
+  .hobbies__line__box {
+    grid-column: span 2;
+  }
+  .academic__courses__box {
+    grid-column: span 2;
+  }
+}
+@media screen and (min-width: 800px) {
+  .menu__list {
+    display: flex;
+    gap: 1rem;
+  }
+  .menu__contacto {
+    display: none;
+  }
+  .title__profile img {
+    width: 15%;
+    order: 2;
+  }
+  .title__profile h2 {
+    font-size: 2.5rem;
+  }
+  .title__box__section {
+    font-size: 1.5rem;
+  }
+  .about__container__title {
+    font-size: 2.5rem;
+  }
+  .about__container__paragraph {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .skills__title {
+    font-size: 2.5rem;
+  }
+  .skills__line__card {
+    grid-column: span 1;
+  }
+  .hobbies__title {
+    font-size: 2.5rem;
+  }
+  .academic__title {
+    font-size: 2.5rem;
+  }
+  .academic__courses__box {
+    grid-column: span 1;
+  }
+  .experience__title {
+    font-size: 2.5rem;
+  }
+  .experience__box {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .experience__box img {
+    width: 60%;
+  }
+  .experience__box__info {
+    align-content: center;
+    justify-items: center;
+    font-size: 1.5rem;
+  }
+  .experience__box:nth-child(even) img {
+    order: 2;
+  }
+  .formcontato {
+    padding-block: 2rem;
+  }
+  .formcontato__contacto {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .formcontato img {
+    display: block;
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body > * {
+    padding-inline: 10vw !important;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
